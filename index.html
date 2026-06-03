@@ -1,58 +1,28 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Фото-баннер</title>
-    <style>
-        /* Обнуляем базовые отступы */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        /* Контейнер баннера */
-        .hero-banner {
-            position: relative;
-            width: 100%;
-            height: 80vh; /* Баннер займет 80% высоты экрана */
-            min-height: 400px;
-            /* Замените URL ниже на ссылку на ваше фото */
-            background-image: url(https://sun9-36.userapi.com/s/v1/ig2/FDkhHWQLz0H6QRZ_PSiMUix26wF0wQLAEe5mIW1Ux544ntxgJRKpbN7i8QbdJ0RaD7Us94MaqAcFfHYKCJoFaI1c.jpg?quality=95&as=32x18,48x27,72x41,108x62,160x92,240x137,360x206,480x275,540x309,640x366,720x412,1080x618,1212x694&from=bu&cs=1212x0);
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        /* Темный фильтр поверх фото, чтобы текст лучше читался */
-        .hero-banner::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.4); /* 40% затемнения */
-            z-index: 1;
-        }
-
-        /* Контент баннера */
-        .banner-content {
-            position: relative;
-            z-index: 2; /* Поднимаем текст над темным фильтром */
-            text-align: center;
-            color: #ffffff;
-            padding: 0 20px;
-            max-width: 800px;
-        }
-
-    </style>
-</head>
-<body>
+<div style="
+  width: 300px;
+  height: 250px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  padding: 20px;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+">
+  <h3 style="margin-top: 0;">Новый курс по веб‑разработке</h3>
+  <p style="font-size: 14px; line-height: 1.4;">
+    Освойте HTML, CSS и JavaScript с нуля за 3 месяца!
+  </p>
+  <a href="https://sun9-36.userapi.com/s/v1/ig2/FDkhHWQLz0H6QRZ_PSiMUix26wF0wQLAEe5mIW1Ux544ntxgJRKpbN7i8QbdJ0RaD7Us94MaqAcFfHYKCJoFaI1c.jpg?quality=95&as=32x18,48x27,72x41,108x62,160x92,240x137,360x206,480x275,540x309,640x366,720x412,1080x618,1212x694&from=bu&cs=1212x0)" style="
+    display: inline-block;
+    background: white;
+    color: #764ba2;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 15px;
+  ">Узнать подробнее</a>
+</div>
 
  
